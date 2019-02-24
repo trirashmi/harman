@@ -1,0 +1,14 @@
+<div [ngClass]="container">
+<h1 style="text-align: center">Test Demo Application</h1>
+<div [className]="'logindiv'">
+<h3 style="background-color: blue">User Login</h3>
+<p>UserName</p>
+<input type="text" [(ngModel)]="uid" id="uid"/>
+<p>Password</p>
+<input type="password" [(ngModel)]="pwd" id="pwd"/>
+<p style="vertical-align: bottom">
+<img src="assets/images/next.png"  width="13%" style="padding-top: 15%;cursor: pointer;" (click)="doLogin()">
+</p>
+
+</div>
+</div>

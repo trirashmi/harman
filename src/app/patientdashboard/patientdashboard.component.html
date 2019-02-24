@@ -1,0 +1,38 @@
+<app-nav></app-nav>
+<div>
+<div [ngClass]="'split left'">
+<ul class="">
+  <li style="background-color: blue">
+    <span>Patients</span>
+  </li>
+  <li *ngFor="let patient of patients" >
+    <a class="" (click)=loadData(patient)><span>{{patient.name}}</span> <span style="padding-left: 19%">{{ patient.age}} years </span> </a>
+  </li>
+</ul>
+</div>
+<div [ngClass]="'split right'">
+   <table [ngClass]="'table table-hover'">
+      <thead [ngClass]="'thead-dark'">
+        <tr >
+          <th>Name</th>
+          <th>Age</th>
+          <th>Address</th>
+          <th>Doctor</th>
+          <th>IsNormal</th>
+        </tr>
+    </thead>
+     <tr>
+       <td>{{_patient.name }}</td>
+       <td>{{_patient.age }}</td>
+       <td>{{_patient.address }}</td>
+       <td>{{_patient.doctor }}</td>
+       <td>{{_patient.isnormal }}</td>
+     </tr>
+   </table>
+   <div>
+     <img width="15%" [src]="_patient.image1"/>
+     <img width="15%" [src]="_patient.image2"/>
+   </div>
+</div>
+</div>
+

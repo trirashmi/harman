@@ -1,0 +1,28 @@
+<nav [ngClass]="'navbar navbar-expand-lg navbar-light bg-light'">
+    <button [ngClass]="'navbar-toggler'" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span [ngClass]="'navbar-toggler-icon'"></span>
+    </button>
+    <div [ngClass]="'collapse navbar-collapse'" id="navbarTogglerDemo01">
+      <a [ngClass]="'navbar-brand'" href="#">Dashboard</a>
+      <ul [ngClass]="'navbar-nav mr-auto mt-2 mt-lg-0'">
+        <!-- <li [ngClass]="'nav-item active'">
+          <a [ngClass]="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li [ngClass]="'nav-item'">
+          <a [ngClass]="'nav-link'" href="#">Link</a>
+        </li>
+        <li [ngClass]="'nav-item'">
+          <a [ngClass]="'nav-link disabled'" href="#">Disabled</a>
+        </li> -->
+      </ul>
+      <span [ngClass]="'form-inline my-2 my-lg-0'">
+         <span style="margin-right:-44%"></span> <span>Select User</span><span></span>
+
+          <span style="margin:0 17% 0 25%"><i class="fab fa-buysellads"></i><span>Admin</span></span>
+          <i class="fas fa-sign-out-alt"></i> <span><a href="\login">Logout</a></span>
+         
+
+        
+      </span>
+    </div>
+  </nav>
